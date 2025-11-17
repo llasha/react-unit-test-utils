@@ -1,6 +1,6 @@
 {
-  "name": "@edx/react-unit-test-utils",
-  "version": "1.0.0-semantically-released",
+  "name": "@edunext/react-unit-test-utils",
+  "version": "4.0.0-alpha.1",
   "description": "React toolkit for writing and testing react components",
   "main": "dist/index.js",
   "release": {
@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@edx/browserslist-config": "^1.1.1",
-    "@edx/frontend-platform": "^8.3.3",
+    "@edx/frontend-platform": "github:edunext/frontend-platform#ase/lang-selector",
     "@openedx/frontend-build": "^14.4.0",
     "@openedx/paragon": "^23.0.0",
     "axios": "^1.4.0",
@@ -60,7 +60,7 @@
     "ts-jest": "^29.1.2"
   },
   "peerDependencies": {
-    "@edx/frontend-platform": "^8.3.1",
+    "@edx/frontend-platform": "8.3.11-alpha.1 || ^8.3.1",
     "@openedx/frontend-build": "^14.3.0",
     "@openedx/paragon": "^22.0.0 || ^23.0.0",
     "react": "^18.0.0"
