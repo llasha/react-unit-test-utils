@@ -1,6 +1,6 @@
 {
-  "name": "@edunext/react-unit-test-utils",
-  "version": "4.0.0-alpha.1",
+  "name": "@l1ph0x/react-unit-test-utils",
+  "version": "4.0.0-ka.8",
   "description": "React toolkit for writing and testing react components",
   "main": "dist/index.js",
   "release": {
@@ -45,11 +45,14 @@
   },
   "devDependencies": {
     "@edx/browserslist-config": "^1.1.1",
-    "@edx/frontend-platform": "github:edunext/frontend-platform#ase/lang-selector",
-    "@openedx/frontend-build": "^14.4.0",
-    "@openedx/paragon": "^23.0.0",
+    "@edx/frontend-platform": "npm:@l1ph0x/frontend-platform@8.3.11-ka.14",
+    "@openedx/frontend-build": "^14",
+    "@openedx/paragon": "npm:@l1ph0x/paragon@23.4.5-ka.3",
     "axios": "^1.4.0",
     "es-check": "^2.3.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-node": "^0.3.9",
+    "eslint-import-resolver-typescript": "^4.4.4",
     "husky": "2.7.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^29.7.0",
@@ -60,9 +63,9 @@
     "ts-jest": "^29.1.2"
   },
   "peerDependencies": {
-    "@edx/frontend-platform": "8.3.11-alpha.1 || ^8.3.1",
-    "@openedx/frontend-build": "^14.3.0",
-    "@openedx/paragon": "^22.0.0 || ^23.0.0",
+    "@edx/frontend-platform": "8.3.11-ka.14 || ^8.0.0",
+    "@openedx/frontend-build": "^14",
+    "@openedx/paragon": "23.4.5-ka.3 || ^23.0.0",
     "react": "^18.0.0"
   }
 }

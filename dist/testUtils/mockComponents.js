@@ -40,11 +40,8 @@ export const mockNestedComponent = (name, contents) => {
  *     IconButton: 'IconButton',
  *   })
  */
-export const mockNestedComponents = mapping => Object.entries(mapping).reduce((obj, _ref) => {
-  let [name, value] = _ref;
-  return _objectSpread(_objectSpread({}, obj), {}, {
-    [name]: mockNestedComponent(name, value)
-  });
-}, {});
+export const mockNestedComponents = mapping => Object.entries(mapping).reduce((obj, [name, value]) => _objectSpread(_objectSpread({}, obj), {}, {
+  [name]: mockNestedComponent(name, value)
+}), {});
 export default mockNestedComponents;
 //# sourceMappingURL=mockComponents.js.map

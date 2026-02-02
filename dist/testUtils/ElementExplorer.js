@@ -1,7 +1,6 @@
 import { isEqual } from 'lodash';
 class ElementExplorer {
-  constructor(element, toSnapshot) {
-    let parent = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+  constructor(element, toSnapshot, parent = null) {
     this.el = element;
     this.toSnapshot = toSnapshot;
     this.props = {};

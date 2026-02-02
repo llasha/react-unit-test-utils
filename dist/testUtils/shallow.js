@@ -14,10 +14,9 @@ import { isFragment, isLazy, isPortal, isMemo, isSuspense, isForwardRef } from '
 import ElementExplorer from './ElementExplorer';
 const getNodeName = node => node.displayName || node.name || '';
 class ReactShallowRenderer {
-  constructor(children) {
-    let {
-      Wrapper = null
-    } = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  constructor(children, {
+    Wrapper = null
+  } = {}) {
     _defineProperty(this, "shallowRenderer", null);
     this.shallowRenderer = new ShallowRenderer();
     this.shallowWrapper = Wrapper ? this.shallowRenderer.render(/*#__PURE__*/React.createElement(Wrapper, null, children)) : this.shallowRenderer.render(children);
@@ -107,8 +106,7 @@ class ReactShallowRenderer {
     const functionName = getNodeName(innerNode);
     return outerNode.type.displayName || (functionName !== '' ? `${wrapperName}(${functionName})` : wrapperName);
   }
-  getRenderOutput() {
-    let render = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+  getRenderOutput(render = false) {
     if (!this.shallowWrapper) {
       return this.shallowWrapper;
     }
@@ -116,10 +114,7 @@ class ReactShallowRenderer {
   }
 
   // eslint-disable-next-line
-  extractProps() {
-    let _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    let key = arguments.length > 1 ? arguments[1] : undefined;
-    let render = arguments.length > 2 ? arguments[2] : undefined;
+  extractProps(_ref = {}, key, render) {
     let {
         children
       } = _ref,
