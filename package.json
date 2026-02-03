@@ -1,6 +1,6 @@
 {
   "name": "@l1ph0x/react-unit-test-utils",
-  "version": "4.0.0-ka.8",
+  "version": "4.0.0-ka.9",
   "description": "React toolkit for writing and testing react components",
   "main": "dist/index.js",
   "release": {
@@ -44,10 +44,10 @@
     "react-test-renderer": "^18.3.1"
   },
   "devDependencies": {
-    "@edx/browserslist-config": "^1.1.1",
-    "@edx/frontend-platform": "npm:@l1ph0x/frontend-platform@8.3.11-ka.14",
-    "@openedx/frontend-build": "^14",
     "@openedx/paragon": "npm:@l1ph0x/paragon@23.4.5-ka.3",
+    "@edx/frontend-platform": "npm:@l1ph0x/frontend-platform@8.3.11-ka.14",
+    "@edx/browserslist-config": "^1.1.1",
+    "@openedx/frontend-build": "^14",
     "axios": "^1.4.0",
     "es-check": "^2.3.0",
     "eslint-import-resolver-alias": "^1.1.2",
@@ -63,9 +63,9 @@
     "ts-jest": "^29.1.2"
   },
   "peerDependencies": {
+    "@openedx/paragon": "23.4.5-ka.3 || ^23.0.0",
     "@edx/frontend-platform": "8.3.11-ka.14 || ^8.0.0",
     "@openedx/frontend-build": "^14",
-    "@openedx/paragon": "23.4.5-ka.3 || ^23.0.0",
     "react": "^18.0.0"
   }
 }
