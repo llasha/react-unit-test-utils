@@ -25,3 +25,5 @@ module.config.js
 src/i18n/transifex_input.json
 temp
 .npmrc
+
+.npmrc
